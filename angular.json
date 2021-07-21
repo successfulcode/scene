@@ -99,7 +99,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bulma/css/bulma.css",
               "src/styles.scss"
+              
             ],
             "scripts": []
           }
