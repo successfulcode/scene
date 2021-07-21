@@ -13,5 +13,3 @@ export class MainItemComponent implements OnInit {
 
   ngOnInit(): void {}
 }
-
-// { title: 'Scene', message: 'always together', id: 5 },

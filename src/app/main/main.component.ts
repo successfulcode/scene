@@ -45,4 +45,13 @@ export class MainComponent implements OnInit {
     },
   ];
   ngOnInit(): void {}
+
+  updatePosts(post: any) {
+    const newPost = {
+      title: post.title,
+      message: post.message,
+      id: this.postsItems.length + 1,
+    };
+    this.postsItems.unshift(newPost);
+  }
 }
