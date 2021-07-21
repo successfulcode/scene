@@ -1,10 +1,19 @@
 import { Component } from '@angular/core';
 
+export interface Names {
+  title: string;
+  message: string;
+  id?: number;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'scene';
+  initialTitles: Names = {
+    title: 'Scene',
+    message: 'always together',
+  };
 }
